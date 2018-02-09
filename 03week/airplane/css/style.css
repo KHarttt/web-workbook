@@ -1,29 +1,145 @@
+
+
+url('https://fonts.googleapis.com/css?family=Roboto'); /* watch bit.ly/2fn591n */
+
+
+* {
+  /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+  padding: 0;
+  margin: 0;
+}
+
 body{
   background: url("../img/airline.jpg") no-repeat center center fixed;
   background-size: cover;
-  
-}
-
-.top{
-  background: #193A55;
-  width: 100%;
-  position:absolute;
-  display: flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ffffff;
 
 }
-
-.logo{
-  width:50%;
-  position:relative;
-}
-
-.nav{
-  position:relative;
-  right:5%;
-  margin-left:5%;
+nav,
+main {
+  /* the padding and border is calculated into the width and height of the <nav> and <main> elements automatically by the browser */
   box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #193a55;
+  color: #fff;
+  height: 82px;
+  border: 0 solid #fff;
+  border-bottom-width: 1px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links ul li {
+  margin: 10px;
+  display: inline;
+}
+
+.active {
+  color: #03b5a3;
+}
+
+.links ul li img {
+  margin-right: 5px;
+}
+
+main {
+  height: calc(100vh - 82px);
+  position: relative;  /* create a coordinate system */
+}
+
+section {
+  width: 542px;
+  height: 386px;
+  background: #193a55;
+  border-radius: 5px;
+  position: absolute;  /* can be positioned in the <main> coordinate system */
+  top: 50px;
+  left: 50px;
+}
+
+.tabs {
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tab1,
+.tab2,
+.tab3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3); /* take up 1 third each */
+  height: 60px;
+  background: #018D80;
+}
+
+.tab1 {
+  background: #0063B7;  /* overrides what was set previously */
+  border-top-left-radius: 5px;
+}
+
+.tab3 {
+  border-top-right-radius: 5px;
+}
+
+.wrapper1{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  padding-top:50px
+}
+
+.wrapper2 {
+  display:flex;
+  flex-direction:row;
+  padding-bottom:50px;
+  padding-top:20px;
+  justify-content:space-around;
+
+}
+
+.box1, .box2, .box3, .box4 {
+  width: 175px;
+  height:40px;
+  border: 2px solid;
+  border-color:white;
+  border-radius:2px;
+  color:white;
+}
+
+.wrapper3 {
+  display:flex;
+}
+
+p {
+  color:white;
+  padding-left:50px;
+}
+.box5 {
+  width:70px;
+  height:40px;
+  border: 2px solid white;
+  color:white;
+  border-radius:2px;
+  margin-left:15px;
+}
+.wrapper4 {
+  color:white;
+  display:flex;
+}
+.R {
+  color:white;
+  padding-left:110px;
+}
+
+.O {
+  color:white;
+  padding-left:20px;
 }
