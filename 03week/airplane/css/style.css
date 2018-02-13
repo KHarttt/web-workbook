@@ -1,10 +1,10 @@
 
 
-url('https://fonts.googleapis.com/css?family=Roboto'); /* watch bit.ly/2fn591n */
+url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 * {
-  /* the simplest css reset possible, can cause performance issues on very complex HTML Documents */
+
   padding: 0;
   margin: 0;
 }
@@ -16,8 +16,7 @@ body{
 }
 nav,
 main {
-  /* the padding and border is calculated into the width and height of the <nav> and <main> elements automatically by the browser */
-  box-sizing: border-box;
+
 }
 
 nav {
@@ -50,7 +49,7 @@ nav {
 
 main {
   height: calc(100vh - 82px);
-  position: relative;  /* create a coordinate system */
+  position: relative;  
 }
 
 section {
